@@ -21,12 +21,12 @@ spring:
         webmvc:
           routes:
             - id: merchant-service
-              uri: lb//merchant-service
+              uri: lb://merchant-service
               predicates:
                 - Path=/v1/auth/**, /v1/merchants/** 
 
             - id: payment-service
-              uri: lb//payment-service
+              uri: lb://payment-service
               predicates:
                 - Path=/v1/orders/**, /v1/payments/** 
 
