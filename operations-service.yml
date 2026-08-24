@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: ${OPERATIONS_DB_URL:jdbc:postgresql://localhost:5431/payment-gateway-operations-DB}
+
+server:
+  port: 9020
+
+app:
+  kafka:
+    webhook:
+      delivery:
+        redis-key: "webhook-retry"
+        batch-size: 100
+        header: X-Payment-Gateway-Signature

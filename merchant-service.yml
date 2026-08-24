@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${MERCHANT_DB_URL:jdbc:postgresql://localhost:5431/payment-gateway-merchant-DB}
+
+server:
+  port: 9010
+
+jwt:
+  secret-key: ${JWT_SECRET_KEY:dont-use-in-production-cwiuebkcqeguf2784rw648q7130idnje2bco}

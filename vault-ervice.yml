@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${VAULT_DB_URL:jdbc:postgresql://localhost:5431/payment-gateway-vault-DB}
+
+server:
+  port: 9040
+
+vault:
+  master-key: 36EzFVZlpE9JqaoMByKKBhVBEDDTe41kL8XseWvtaK0=
