@@ -9,9 +9,9 @@ spring:
     show-sql: false
   
   datasource:
-  username: ${DB_USER:abhinay}
-  password: ${DB_PASS:Abhinay123}
-  driver-class-name: org.postgresql.Driver
+    username: ${DB_USER:abhinay}
+    password: ${DB_PASS:Abhinay123}
+    driver-class-name: org.postgresql.Driver
 
   data:
   redis:
