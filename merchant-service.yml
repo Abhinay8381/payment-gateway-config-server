@@ -7,3 +7,7 @@ server:
 
 jwt:
   secret-key: ${JWT_SECRET_KEY:dont-use-in-production-cwiuebkcqeguf2784rw648q7130idnje2bco}
+
+webhook:
+  encryption:
+    secret-key: PHf6RCbMTCF0wdszB/uzN3zNrt5AOQVJRgm5Oklnl+k=
