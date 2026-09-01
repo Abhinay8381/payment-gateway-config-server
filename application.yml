@@ -5,7 +5,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: false
   
   datasource:
@@ -43,7 +42,7 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
-        spring.json.trusted.packages: "com.abhinay.com.abhinay.payment_gateway.*"
+        spring.json.trusted.packages: "com.abhinay.payment_gateway.*"
         spring.json.use.type.headers: false
         spring.json.value.default.type: java.util.LinkedHashMap
 
