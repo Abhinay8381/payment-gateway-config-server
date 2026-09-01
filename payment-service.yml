@@ -40,7 +40,7 @@ server:
 payment:
   simulator:
     poll-interval-ms: 5000
-    chaos-mode: FAILURE
+    chaos-mode: NORMAL
     methods:
       CARD:
         min-delay-seconds: 2
