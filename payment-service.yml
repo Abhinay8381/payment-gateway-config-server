@@ -36,3 +36,21 @@ resilience4j:
         wait-duration: 500ms
 server:
   port: 9030
+
+payment:
+  simulator:
+    poll-interval-ms: 5000
+    chaos-mode: FAILURE
+    methods:
+      CARD:
+        min-delay-seconds: 2
+        max-delay-seconds: 6
+        success-rate: 80
+      UPI:
+        min-delay-seconds: 1
+        max-delay-seconds: 3
+        success-rate: 95
+      NET_BANKING:
+        min-delay-seconds: 4
+        max-delay-seconds: 10
+        success-rate: 70

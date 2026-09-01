@@ -45,3 +45,7 @@ app:
         redis-key: "webhook-retry"
         batch-size: 100
         header: X-Payment-Gateway-Signature
+
+settlement:
+ simulator:
+   poll-interval-ms: 5000
